@@ -1,3 +1,5 @@
+*Forest Fires in Algeria: Stepwise Linear Regression and K-fold validation; 
+
 *Import the File and Create the Data Set; 
 FILENAME REFFILE '/home/u62197971/611regression/Algerian_Forest_Fire.csv';
 
