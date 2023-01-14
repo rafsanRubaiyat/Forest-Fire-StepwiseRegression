@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -99,7 +100,7 @@ Regression Analysis on Probability of Forest Fire</span></b></p>
 margin-left:1.5in;text-align:justify'><b><span style='font-size:16.0pt;
 line-height:107%;font-family:"Times New Roman",serif'>Project Description:</span></b><span
 style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif'> The
-relationships between the ‘Probability of Forest Fire’ in Algeria and its various
+relationships between the ï¿½Probability of Forest Fireï¿½ in Algeria and its various
 weather components have been estimated. Stepwise Linear Regression has been
 performed for this purpose and K-fold Cross Validation (K=10) has been carried
 out to evaluate the performance of the model. SAS has been used for the
@@ -110,7 +111,7 @@ margin-left:1.5in;text-align:justify'><b><span style='font-size:16.0pt;
 line-height:107%;font-family:"Times New Roman",serif'>Data Introduction:</span></b><span
 style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif'> </span><span
 style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif'>The
-dataset includes 2,243 records of weather components’ data. </span></p>
+dataset includes 2,243 records of weather componentsï¿½ data. </span></p>
 
 <p class=MsoNormal align=center style='margin-left:1.5in;text-align:center'><b><span
 style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif'>Table:</span></b><span
@@ -133,7 +134,7 @@ Attributes in the dataset</span></p>
   4. <b>RainAmount:</b> Total rain on that day in mm: 0 to 16.8. <br>
   5. <b>FineMoisture:</b> Fine Fuel Moisture Code (FFMC) index: 28.6</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='font-size:14.0pt;font-family:"Times New Roman",serif'> to 92.5.</span></p>
+  style='font-size:14.0pt;font-family:"Times New Roman",serif'>ï¿½to 92.5.</span></p>
   <p class=MsoNoSpacing><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>6.
   <b>DuffMoisture:</b> Duff Moisture Code (DMC) index: 1.1 to 65.9.</span></p>
   </td>
@@ -147,7 +148,7 @@ Attributes in the dataset</span></p>
   <b>WeatherIndex</b>: Fire Weather Index: 0 to 31.1. </span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='font-size:14.0pt;font-family:"Times New Roman",serif'>11. <b>FireProb</b>:
-  The probability percentage of the occurrence of forest fire: 0 to 100.  </span></p>
+  The probability percentage of the occurrence of forest fire: 0 to 100. ï¿½</span></p>
   </td>
  </tr>
 </table>
@@ -159,11 +160,11 @@ Attributes in the dataset</span></p>
 <p class=MsoNormal style='margin-left:1.5in;text-align:justify'><span
 style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif'>There
 are <b>9 predictor variables:</b> Temperature, Wind, RainAmount, FineMoisture,
-DuffMoisture, Drought, InitialSpeed , BuildUp, and WeatherIndex.  </span></p>
+DuffMoisture, Drought, InitialSpeed , BuildUp, and WeatherIndex. ï¿½</span></p>
 
 <p class=MsoNormal style='margin-left:1.5in'><span style='font-size:14.0pt;
 line-height:107%;font-family:"Times New Roman",serif'>The <b>response variable </b>is<b>
-FireProb.</b>   </span></p>
+FireProb.</b> ï¿½ï¿½</span></p>
 
 <p class=MsoNormal style='margin-left:1.5in'><span style='font-size:14.0pt;
 line-height:107%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
@@ -173,50 +174,50 @@ line-height:107%;font-family:"Times New Roman",serif'>Methods Used: </span></b><
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
 font-family:"Times New Roman",serif'>* A least square regression has been
-carried out with all the predictor variables.  </span></p>
+carried out with all the predictor variables.ï¿½ </span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
 font-family:"Times New Roman",serif'>* Stepwise Regressions and K-fold validations
 have been performed following this: </span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
-font-family:"Times New Roman",serif'>     Random_variable = Random integer
-between 1 and K;  </span></p>
+font-family:"Times New Roman",serif'>ï¿½ï¿½ï¿½ï¿½ Random_variable = Random integer
+between 1 and K; ï¿½</span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
-font-family:"Times New Roman",serif'>     For i=1 to K do:  </span></p>
+font-family:"Times New Roman",serif'>ï¿½ï¿½ï¿½ï¿½ For i=1 to K do: ï¿½</span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
-font-family:"Times New Roman",serif'>        Training_DataSet = K-1 folds. (random_variable
+font-family:"Times New Roman",serif'>ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Training_DataSet = K-1 folds. (random_variable
 &#8800; i); </span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
-font-family:"Times New Roman",serif'>        Stepwise regression performed on
+font-family:"Times New Roman",serif'>ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Stepwise regression performed on
 Training_Dataset with entry significance level = remove</span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
-font-family:"Times New Roman",serif'>        significance level = 0.05;  </span></p>
+font-family:"Times New Roman",serif'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ significance level = 0.05; ï¿½</span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
-font-family:"Times New Roman",serif'>        Testing_DataSet = 1 fold.
+font-family:"Times New Roman",serif'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Testing_DataSet = 1 fold.
 (random_variable =i); </span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
-font-family:"Times New Roman",serif'>        Calculate the model fit statistics
-on the Testing_Dataset;  </span></p>
+font-family:"Times New Roman",serif'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Calculate the model fit statistics
+on the Testing_Dataset;ï¿½ </span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
-font-family:"Times New Roman",serif'>     End; </span></p>
+font-family:"Times New Roman",serif'>ï¿½ï¿½ï¿½ï¿½ End; </span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
-font-family:"Times New Roman",serif'>     Calculate the average test results from
-all the K-folds.  </span></p>
+font-family:"Times New Roman",serif'>ï¿½ï¿½ï¿½ï¿½ Calculate the average test results from
+all the K-folds. ï¿½</span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
 font-family:"Times New Roman",serif'>&nbsp;</span></p>
 
 <p class=MsoNoSpacing style='margin-left:1.5in'><span style='font-size:14.0pt;
-font-family:"Times New Roman",serif'>    </span></p>
+font-family:"Times New Roman",serif'>ï¿½ï¿½ï¿½ </span></p>
 
 <p class=MsoNormal style='margin-left:1.5in'><b><span style='font-size:16.0pt;
 line-height:107%;font-family:"Times New Roman",serif'>Results: </span></b></p>
@@ -1124,13 +1125,13 @@ style='font-size:14.0pt;color:black;background:white;font-style:normal'>Iteratio
 </div>
 
 <p class=MsoNoSpacing align=center style='text-align:center'><em><span
-style='font-size:12.0pt;color:black;background:white;font-style:normal'>…</span></em></p>
+style='font-size:12.0pt;color:black;background:white;font-style:normal'>ï¿½</span></em></p>
 
 <p class=MsoNoSpacing align=center style='text-align:center'><em><span
-style='font-size:12.0pt;color:black;background:white;font-style:normal'>…</span></em></p>
+style='font-size:12.0pt;color:black;background:white;font-style:normal'>ï¿½</span></em></p>
 
 <p class=MsoNoSpacing align=center style='text-align:center'><em><span
-style='font-size:12.0pt;color:black;background:white;font-style:normal'>…</span></em></p>
+style='font-size:12.0pt;color:black;background:white;font-style:normal'>ï¿½</span></em></p>
 
 <p class=MsoNoSpacing align=center style='text-align:center'><em><span
 style='font-size:14.0pt;color:black;background:white;font-style:normal'>Iteration
@@ -2020,7 +2021,7 @@ Summary of the test results of all K-folds.</span></b></p>
 line-height:107%;font-family:"Times New Roman",serif'>The residual plots and
 elaborate results can be found in the SAS program result window. </span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>                                    </span><span
+<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span><span
 style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif'><a
 href="https://github.com/rafsanRubaiyat/Forest-Fire-StepwiseRegression"><span
 style='color:windowtext'>Link to the GitHub repository</span></a></span></p>
