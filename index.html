@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Forest Fire in Algeria 
+    </title> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css" /> 
+    <link rel="stylesheet" href="css/templatemo-style.css">  
+<!--
+     
+TemplateMo 560 Astro Motion
+
+https://templatemo.com/tm-560-astro-motion
+
+-->
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="video/gfp-astro-timelapse.mp4" type="video/mp4">
+    </video>
+    <div class="page-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cd-slider-nav">
+              <nav class="navbar navbar-expand-lg" id="tm-nav">
+                <a class="navbar-brand" href="https://rafsanrubaiyat.github.io/#0">Rafsan Siddiqui</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar-supported-content">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item selected">
+                        <a class="nav-link" aria-current="page" href="https://rafsanrubaiyat.github.io/#0" data-no="1">Home</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://rafsanrubaiyat.github.io/#0" data-no="2" class="btn btn-primary tm-intro-btn tm-page-link">Projects</a> 
+                        <div class="circle"></div> 
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://drive.google.com/file/d/1wNJqms_98WbEcal6RtZUSfwiCzLfsUY2/view" target="_blank" data-no="3">Resume</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://rafsanrubaiyat.github.io/#0" data-no="4">About</a> 
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://rafsanrubaiyat.github.io/#0" data-no="5">Contact</a>
+                        <div class="circle"></div>
+                      </li>
+                    </ul>
+                  </div>
+              </nav>
+            </div>
+          </div>          
+        </div>        
+      </div>    
+    
+    <div class="page-container">
+      <p> <br> <br>  
+        
+        <font size="+2"> <b>  Stepwise Regression Analysis on Probability of Forest Fire </b></font>  
+        <br> 
+        <br> 
+
+        <font size="+1"> <b> Project Description:  </b></font> 
+        The relationships between the 'Probability of Forest Fire' in Algeria and its various weather components have been estimated. <b> Stepwise Linear Regression has been 
+        performed for this purpose and K-fold Cross Validation (K=10) has been carried out to evaluate the performance of the model. </b> 
+        SAS has been used for the regression and validation. Prior to that, Python was used for data cleaning. <br> 
+
+        <font size="+1"> <b> Data Introduction:  </b></font>  The dataset includes 2,243 records of weather components' data.
+
+        <br />
+<table cellspacing="0" cellpadding="0" border="1">
+  <!-- <caption><center style="color:#ece3e3";></center>>Attributes in the dataset</center></caption> --> 
+    <tr>
+        <td style="text-align: left;">
+          <b>1. Date: </b>(DD/MM/YYYY) Day, month, and year. <br> 
+          <b>2. Temperature: </b> Temperature at noon (temperature max) in Celsius degrees: 22 to 42. <br> 
+          <b>3. Wind: </b> Wind speed in km/h: 6 to 29. <br> 
+          <b>4. RainAmount: </b> Total rain on that day in mm: 0 to 16.8. <br> 
+          <b>5. FineMoisture: </b> Fine Fuel Moisture Code (FFMC) index: 28.6 to 92.5. <br> 
+
+          <b>6. DuffMoisture:</b>  Duff Moisture Code (DMC) index: 1.1 to 65.9.   <br> 
+
+            <br /> 
+            
+        </td>
+        <td style="text-align: left;">
+          <b>7. Drought: </b>  Drought Code (DC) index: 7 to 220.4. <br> 
+          <b>8. InitialSpeed:</b> Initial Speed Index (ISI) of the fire: 0 to 18.5. <br> 
+          <b>9. BuildUp:</b> Buildup Index (BUI) index: 1.1 to 68. <br> 
+          
+          <b>10. WeatherIndex: </b>Fire Weather Index: 0 to 31.1. <br> 
+          
+          <b>11. FireProb:</b>  The probability percentage of the occurrence of forest fire: 0 to 100. <br>  
+            <br />
+            
+        </td>
+    </tr>
+
+</table>
+
+ <br> 
+
+ There are 9 predictor variables: Temperature, Wind, RainAmount, FineMoisture, DuffMoisture, Drought, InitialSpeed , BuildUp, and WeatherIndex. <br> 
+
+The response variable is FireProb. 
+
+ 
+<br> <br> 
+
+<font size="+1"> <b> Methods Used: </b></font>   
+
+* A least square regression has been carried out with all the predictor variables. <br> 
+
+* Stepwise Regressions and K-fold validations have been performed following this: <br> 
+
+Random_variable = Random integer between 1 and K; <br>
+
+For i=1 to K do: <br> 
+
+&emsp;Training_DataSet = K-1 folds. (random_variable ≠ i); <br>
+
+&emsp;Stepwise regression performed on Training_Dataset with entry significance level = remove significance level = 0.05; <br>
+
+&emsp;Testing_DataSet = 1 fold. (random_variable =i); <br>
+
+&emsp;Calculate the model fit statistics on the Testing_Dataset;  <br>
+
+End; <br>
+
+Calculate the average test results from all the K-folds. <br> 
+
+<br> <br> 
+
+<font size="+1"> <b>  Results: </b></font>    
+
+<br> 
+<br />
+<table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td style="text-align: center;">
+            <img src="img/table1.png" alt="" />
+            
+            <br />
+            
+        </td> 
+    </tr>
+</table>  
+
+<br> 
+<br />
+<table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td style="text-align: center;">
+            <img src="img/table2.png" alt="" />
+            
+            <br />
+            
+        </td> 
+        <td style="text-align: center;">
+          <img src="img/table3.png" alt="" />
+          
+          <br />
+          
+      </td> 
+    </tr>
+</table>  
+        
+<br> 
+<br />
+<table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td style="text-align: center;">
+            <img src="img/table4.png" alt="" />
+            
+            <br />
+            
+        </td> 
+    </tr>
+</table>  
+
+<br> <br> 
+
+<font size="-1">  Note: The original dataset has been collected from UC Irvine Machine Learning Repository 
+  (https://archive.ics.uci.edu/ml/index.php). <br> 
+  The relevant research paper is: Abid, F., & Izeboudjen, N. (2020). 
+  Predicting forest fire in Algeria using data mining techniques: 
+  Case study of the decision tree algorithm. In International Conference on Advanced Intelligent Systems for Sustainable Development (pp. 363-370). Springer, Cham
+</font>  
+<br> <br>
+<font size="+2"><b> <a class="nav-link" href="https://github.com/rafsanRubaiyat/Regression-Analyses-rural_agents-female_users-MFS-Bangladesh" 
+    target="_blank" data-no="3">Link to the Github repository</a></b></font> 
+
+</i> 
+
+
+
+    </p>
+      </div>
+      </body>
+</html> 
